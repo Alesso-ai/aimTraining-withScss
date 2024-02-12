@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+$body-font: 'Kanit', sans-serif;
+$background-color: #cdcdcd;
+$text-color: #000000;
+$h1-font-size: 70px;
+
+body {
+    background-color: $background-color;
+    font-family: $body-font;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; 
+}
+
+h1 {
+    color: $text-color;
+    text-align: center;
+    margin-top: 50px;
+    font-size: $h1-font-size; 
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

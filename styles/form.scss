@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+$body-font: 'Kanit', sans-serif;
+$background-color: rgb(184, 183, 181);
+$form-bg-color: rgb(249, 249, 249);
+$form-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+$submit-btn-color: #007BFF;
+$submit-btn-hover-color: #0056b3;
+$error-text-color: red;
+$link-color: #007bff;
+$link-hover-color: #0056b3;
+
+body {
+    font-family: $body-font;
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    height: 100vh;
+}
+
+.form-contact {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: $form-box-shadow;
+    background-color: $form-bg-color;
+    border-radius: 20px;
+    text-align: center; 
+
+    header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto; 
+        max-width: 40%; 
+        height: auto; 
+        border-radius: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    input[type="text"],
+    textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        color: white;
+        background-color: $submit-btn-color;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: $submit-btn-hover-color;
+        }
+    }
+}
+
+#errores {
+    color: $error-text-color;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.btn-volver {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: $link-color;
+    border: 1px solid $link-color;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 20px;
+
+    &:hover {
+        background-color: $link-hover-color;
+        color: #ffffff;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

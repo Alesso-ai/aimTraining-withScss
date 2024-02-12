@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap");
+body {
+  background-color: #cdcdcd;
+  font-family: "Kanit", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+h1 {
+  color: #000000;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 70px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=envio.css.map */

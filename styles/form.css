@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap");
+body {
+  font-family: "Kanit", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(184, 183, 181);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.form-contact {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(249, 249, 249);
+  border-radius: 20px;
+  text-align: center;
+}
+.form-contact header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-contact img {
+  display: block;
+  margin: 0 auto;
+  max-width: 40%;
+  height: auto;
+  border-radius: 20px;
+}
+.form-contact form {
+  display: flex;
+  flex-direction: column;
+}
+.form-contact label {
+  font-weight: bold;
+  margin-top: 20px;
+}
+.form-contact input[type=text],
+.form-contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.form-contact input[type=submit] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  background-color: #007BFF;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.form-contact input[type=submit]:hover {
+  background-color: #0056b3;
+}
+
+#errores {
+  color: red;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.btn-volver {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 20px;
+}
+.btn-volver:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+}
+.btn-volver:focus {
+  outline: none;
+}/*# sourceMappingURL=form.css.map */

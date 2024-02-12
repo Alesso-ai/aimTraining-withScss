@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap");
+
+$body-font: 'Kanit', sans-serif;
+$background-color: #f4f4f4;
+$text-color: #000000;
+$hero-background-image: url("../assets/imgs/Iso_limpio.png") center/cover;
+$hero-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+$hero-padding: 100px 0;
+$h1-font-size: 2.5rem;
+$p-font-size: 1.2rem;
+$h2-font-size: 2rem;
+$h2-margin-top: 20px;
+$h2-margin-bottom: 10px;
+$p-color: #666;
+$p-line-height: 1.5;
+$btn-color: #007bff;
+$btn-hover-color: #0056b3;
+
+body {
+  font-family: $body-font;
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+  text-align: center;
+}
+
+.hero {
+  background: $hero-background-image;
+  clip-path: $hero-clip-path;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: $hero-padding;
+
+  p {
+    color: $text-color;
+    font-size: 2.5rem;
+  }
+}
+
+h1 {
+  font-size: $h1-font-size;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: $p-font-size;
+  margin-bottom: 20px;
+  color: $p-color;
+  line-height: $p-line-height;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+h2 {
+  font-size: $h2-font-size;
+  margin-top: $h2-margin-top;
+  margin-bottom: $h2-margin-bottom;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero p {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: $btn-color;
+    border: 1px solid $btn-color;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: $btn-hover-color;
+      color: #ffffff;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
