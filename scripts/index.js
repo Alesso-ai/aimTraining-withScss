@@ -28,3 +28,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Inicializa Swiper
+  const mySwiper = new Swiper(".swiper-container", {
+    // Configuración del carrusel
+    loop: true,
+    autoplay: {
+      delay: 3000, // Intervalo de cambio de imagen en milisegundos
+    },
+  });
+});
