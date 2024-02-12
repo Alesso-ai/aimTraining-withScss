@@ -7,4 +7,4 @@ La tematica va a tratar de periféricos de pc para gaming.
 ## Autor
 
 - Nombre: Alejandro Ruiz Prieto
-- Git Hub: https://github.com/Alesso-ai/Layout-T5.git
+- Git Hub: https://github.com/Alesso-ai/aimTraining-withScss.git
