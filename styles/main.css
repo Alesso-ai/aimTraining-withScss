@@ -324,4 +324,19 @@ footer {
   padding: 10px;
   text-align: center;
   color: #fff;
+}
+
+.swiper-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  margin-right: 20px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  border: 2px solid #fff;
+  border-radius: 8px;
 }/*# sourceMappingURL=main.css.map */

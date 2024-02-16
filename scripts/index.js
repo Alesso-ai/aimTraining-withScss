@@ -33,9 +33,11 @@ document.addEventListener("DOMContentLoaded", function () {
   // Inicializa Swiper
   const mySwiper = new Swiper(".swiper-container", {
     // Configuración del carrusel
-    loop: true,
+    loop: false, // Desactiva el bucle
     autoplay: {
       delay: 3000, // Intervalo de cambio de imagen en milisegundos
     },
+    spaceBetween: 20, // Ajusta el espacio entre las imágenes según tus preferencias
+    initialSlide: 0, // Asegura que el carrusel inicie con la primera imagen
   });
 });

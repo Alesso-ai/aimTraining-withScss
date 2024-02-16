@@ -172,7 +172,7 @@ button {
 }
 
 .card {
-  background-color: $fondoAzul; 
+  background-color: $fondoAzul;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -359,3 +359,19 @@ footer {
     }
   }
 }
+
+.swiper-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  margin-right: 20px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  border: 2px solid #fff;
+  border-radius: 8px;
+}
+
