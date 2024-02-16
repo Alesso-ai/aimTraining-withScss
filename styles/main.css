@@ -40,22 +40,6 @@ body.modo-oscuro a {
   font-family: Roboto Condensed, sans-serif;
 }
 
-.hero-container {
-  background: url(/assets/imgs/Cronen\ Miniatura.png) center/cover;
-  height: 80vh;
-  position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
-}
-.hero-container::before {
-  content: "";
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0.7;
-}
-
 .hero-body {
   position: relative;
   display: flex;
@@ -64,14 +48,22 @@ body.modo-oscuro a {
   align-items: center;
   height: 100%;
 }
-
-h1 {
+.hero-body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.hero-body h1 {
   margin: 0;
   color: var(--h1-color);
   font-size: var(--h1-font-size);
+  z-index: 2;
 }
-
-h3 {
+.hero-body h3 {
   margin: 0;
   color: #212121;
   display: flex;
@@ -81,11 +73,51 @@ h3 {
   font-weight: 400;
   margin-bottom: 20px;
   margin-top: 20px;
+  z-index: 2;
 }
-
-span {
+.hero-body span {
   color: var(--span-color);
   font-size: var(--span-font-size);
+  z-index: 2;
+}
+
+.hero-container {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+.hero-container video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero-container .hero-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  z-index: 2;
+}
+.hero-container .hero-body h1, .hero-container .hero-body span {
+  margin: 0;
+  font-size: 3rem;
+  background: none;
+}
+.hero-container .hero-body span {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo h3 {
+  font-size: 3rem;
 }
 
 .form {
